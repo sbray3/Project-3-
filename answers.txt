@@ -1,0 +1,8 @@
+The # of lines:  726736
+The # of different days:  353
+The # of different months:  15
+The # of different years:  2
+The # of error codes:  28302
+The # of redirected codes:  128053
+Most searched: ['index.html', 139528]
+Least searched: ['81.rgb', 1]
