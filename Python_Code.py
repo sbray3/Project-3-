@@ -44,17 +44,17 @@ with open("http_access_log.txt","r") as f:
                if(s[0]=="3"):
                     redir_count += 1
 
-               # # [      0     ,      1     ]
-               # #  [  0  ,  1 ] [   0 ,  1 ]
-               # # [["file",cnt],["file",cnt]]
-               # found = False
-               # for index in range(len(array)):
-               #      if(array[index][0] == f):
-               #           array[index][1] += 1
-               #           found = True
-               #           break
-               # if(not found):
-               #      array.append([f,1])
+               # [      0     ,      1     ]
+               #  [  0  ,  1 ] [   0 ,  1 ]
+               # [["file",cnt],["file",cnt]]
+               found = False
+               for index in range(len(array)):
+                    if(array[index][0] == f):
+                         array[index][1] += 1
+                         found = True
+                         break
+               if(not found):
+                    array.append([f,1])
                if(m == "Jan"):
                     months[0].append(line)
                if(m == "Feb"):
